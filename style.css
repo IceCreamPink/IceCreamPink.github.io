@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+.video-container {
+    position: relative;
+    width: auto;
+    /* 100% lebar tampilan */
+    height: 100vh;
+    /* 100% tinggi tampilan */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Menyesuaikan video agar mengisi seluruh area tanpa merubah aspek rasio */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    /* Gaya lainnya sesuai kebutuhan */
+}
+
+.from-box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: #d5cdcd4a;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+.btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#tombol {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.icon-media {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.icon-media svg {
+    width: 30px;
+    margin: 0 12px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Gaya awal untuk elemen SVG */
+.icon-media a svg {
+    fill: #000000;
+    /* Isi warna ikon sesuai dengan warna teks */
+    transition: fill 0.3s ease;
+    /* Efek transisi untuk perubahan warna */
+}
+
+/* Ganti warna elemen SVG ketika kursor menyentuhnya */
+.icon-media a svg:hover {
+    fill: #ff105f;
+    /* Warna yang diinginkan ketika kursor menyentuh */
+}
+
+.input {
+    top: 155px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-text {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.button-submit {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.checkbox {
+    margin: 30px 10px 30px 0;
+}
+
+.span {
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+
+#login {
+    left: 50px;
+}
+
+#register {
+    left: 450px;
+}
